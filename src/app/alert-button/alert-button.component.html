@@ -1,0 +1,16 @@
+<div class="content">
+    <h1>Alert Button</h1>
+
+    <div class="message is-warning" [hidden]="hiddenContent">
+
+        <div class="message-header">
+            <p>Warning {{ severity }}</p>
+        </div>
+
+        <div class="message-body">
+            {{ jose | async }}
+        </div>
+    </div>
+
+    <button (click)="toogle()" class="button is-info">Toogle Visibilidade</button>
+</div>
